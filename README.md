@@ -66,9 +66,9 @@ Tom: $500
 
 ### Design overview
 
-The program splits the work of reading the file, processing the file, and displaying the results of the processing into 3 separate files, adhering to the Single Responsibility Principle
+The program splits the work of reading the file, processing the file, and displaying the results of the processing into 3 separate classes / objects, adhering to the Single Responsibility Principle
 
-I chose Kotlin, mainly since I'm still fairly new to the language, and I wanted to obtain more practice with it. The fact that it embraces immutability made it all the more appealing to me.
+I chose Kotlin, mainly since I'm still fairly new to it, and I wanted to obtain more practice with it. The fact that it embraces immutability made it all the more appealing to me.
 
 The program uses the Gradle build system, which can be used to compile the application, install the required dependencies, and run the code and tests.
 
