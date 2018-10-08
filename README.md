@@ -1,4 +1,4 @@
-#Basic Credit Card Processing
+# Basic Credit Card Processing
 
 
 This program adds new credit card accounts, processes charges and credits
