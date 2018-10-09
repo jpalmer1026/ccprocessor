@@ -1,6 +1,5 @@
 package com.acme.main
 
-import com.acme.display.CreditCardFormatter
 import com.acme.process.CreditCardProcessor
 import com.acme.process.FileProcessor
 
@@ -15,5 +14,5 @@ fun main(args: Array<String>) {
 
     val fileName = if (args.isEmpty()) stdIn!! else args.first()
     FileProcessor.readFile(fileName)
-    CreditCardFormatter.displayBalances(CreditCardProcessor.getCreditCardMap())
+    CreditCardProcessor.generateSummaryReport()
 }

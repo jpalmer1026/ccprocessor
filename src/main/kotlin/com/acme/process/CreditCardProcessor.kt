@@ -1,5 +1,6 @@
 package com.acme.process
 
+import com.acme.display.CreditCardFormatter
 import com.acme.model.CreditCardStatus
 import com.acme.model.CreditCard
 import com.acme.model.ProcessingOperation
@@ -16,7 +17,7 @@ object CreditCardProcessor {
         }
     }
 
-    fun getCreditCardMap(): Map<String, CreditCard> = creditCardMap
+    fun generateSummaryReport() = CreditCardFormatter.displayBalances(creditCardMap)
 
     private fun processAdd(line: String) {
         val cardHolder = getCardHolder(line)
